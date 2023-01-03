@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href='//fonts.googleapis.com/css?family=Signika+Negative:300' rel='stylesheet' type='text/css'>
+    <script src="./jsMenu.js" defer></script>
+    <link rel="icon" href="./img/logo.png" type="image/icon type">
+</head>
+<body>
+    <input type="image" class="muteBtn" src="./img/off.png">
+    <input type="image" class="onBtn" src="./img/on.png">  
+    <div class="title">ROCK PAPER SCISSORS</div>
+        <div class="nav">
+            <input type="image" id="image" class="play" alt="play" src="./img/play.png" width="350" >
+            <a href="javascript:close_window();"><input type="image" class="exitBtn" alt="exit" src="./img/exit.png" width="350"> </a>
+        </div>
+    <div class="musicOn">
+        <audio id="audioMenu" style="display:none;" src="./songs/backr-music.mp3" controls autoplay loop>
+    </div>
+    <form action="page.html" method="get">
+        <div class="modal">
+            <div class="modal-content">
+                <div class="text">Enter your name:</div>
+                <input id="userInput" type="text" name="user" placeholder="User">
+            <div>
+                <input id="submit" type="image" src="./img/start.png" onclick="handleSubmit()">
+            </div>
+        </div>
+        </div>
+    </form>
+    
+</body>
+</html>

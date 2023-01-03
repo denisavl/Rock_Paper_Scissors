@@ -1,0 +1,214 @@
+html{
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 24px;
+    font-weight: 700;
+    color:beige;
+}
+
+.images{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s ease;
+    border-radius:50%;
+    padding: 50px;
+    margin-top: -40px;
+}
+
+img:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #888888;
+    padding:0px;
+}
+
+
+body{
+    background-image:url(./img/back.jpg) ;
+    background-size: 1535px 800px;
+}
+button{
+    border: none;
+    background: none;
+}
+
+.score{
+    padding-left:30px;
+    padding-right:20px;
+    display: flex;
+    justify-content: space-between;
+    color:rgb(102, 175, 166);
+    padding-top: 25px;
+}
+
+.tabela span{
+    border: 1px solid rgb(195, 104, 104);
+    padding: 10px 12px;
+}
+
+.panou{
+    padding: 2px 10px;
+}
+
+.round{
+    margin-top:50px;
+}
+
+#player{
+    position:absolute;
+    top:10px;
+    left:-80px;
+    color:rgb(152, 176, 217);
+    font-size:20px;
+}
+
+#comp{
+    position: absolute;
+    top:10px;
+    right: -80px;
+    color: rgb(212, 163, 212);
+    font-size:20px;
+}
+
+.scor{
+    margin: 20px auto;
+    width: 150px;
+    font-size: 25px;
+    position: relative;
+    padding: 10px 12px;
+}
+
+.buttons{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.yes{
+    box-shadow: inset 0 0 18px #fff,
+         inset -8px 0 18px #f3bad6,
+         inset 8px 0 20px green,
+         inset -8px 0 30px #f3bad6,
+         inset 8px 0 30px green,
+         0 0 20px green,
+         6px 0 20px white,
+         -6px 0 20px white;
+    padding:10px;
+}
+
+.yes1{
+    box-shadow: inset 0 0 18px #fff,
+         inset -8px 0 18px #f3bad6,
+         inset 8px 0 20px green,
+         inset -8px 0 30px #f3bad6,
+         inset 8px 0 30px green,
+         0 0 20px green,
+         6px 0 20px white,
+         -6px 0 20px white;
+        padding:10px;
+}
+
+.no{
+    box-shadow: inset 0 0 20px white,
+    inset 8px 10px 20px #f3bad6,
+    inset -8px 0 20px red,
+    inset 8px 10px 30px #f3bad6,
+    inset -8px 0 30px red,
+    0 0 20px #fff,
+    -6px 0 20px #f3bad6,
+    6px 0 20px red;
+    padding:10px;
+}
+.yes:hover{
+    padding:15px;
+}
+
+.yes1:hover{
+    padding:15px;
+}
+
+.no:hover{
+    padding:15px;
+}
+.modalComputer {
+    position: fixed; 
+    z-index: 1;
+    top: 50%;
+    left: 50%; 
+    width: 500px; 
+    height:350px; 
+    background-image:url(./img/among1.gif);
+    transform: translate(-50%, -50%) scale(0);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    border-radius: 0.30em;
+}
+.modalComputer.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.resultComputer {
+    padding: 20px 12px;
+    text-align: center;
+    color: red;
+    font-size: 24px;
+}
+.modalPlayer {
+    position: fixed; 
+    z-index: 1;
+    top: 50%;
+    left: 50%; 
+    width: 500px; 
+    height:350px; 
+    background-image:url(./img/win.gif);
+    transform: translate(-50%, -50%) scale(0);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    border-radius: 0.30em;
+}
+.modalPlayer.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.resultPlayer {
+    padding: 20px 12px;
+    text-align: center;
+    color: green;
+    font-size: 24px;
+}
+
+.back{
+    width: 57px;
+    position: fixed;
+    top:0;
+}
+
+
+.muteBtn{
+    width: 59px;
+    height: 48px;
+    margin-top: 5px;
+  } 
+  
+  .onBtn{
+    width: 59px;
+    height: 48px;
+    margin-top: 5px;
+  } 
+
+.exitBtn{
+    margin-top:3px;
+    width: 48px;
+}
+.right{
+    display: flex;
+    position: fixed;
+    top:0;
+    right:0;
+}

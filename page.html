@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS</title>
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo.png" type="image/icon type">
+</head>
+<body>
+    <div class="top-btn">
+        <button class="back-btn">
+            <a href="./index.html"><input type="image" class="back" alt="back-btn" src="./img/back-btn.png"></a> 
+         </button>
+         <div class="right">
+            <input type="image" class="muteBtn" src="./img/off.png">
+            <input type="image" class="onBtn" src="./img/on.png">    
+            <a href="#" onclick="close_window();return false;"><input type="image" class="exitBtn" src="./img/exit-btn.png"></a>
+        </div>
+         </div>
+    <div class="score">
+       <span>Player score: <span class="user">0</span></span><span>Computer score: <span class="computer">0</span></span>    
+    </div>
+        <div class="images">
+            <div class="scor">
+                <div class="tabela"> <span class="playerScore">0</span> : <span class="computerScore"> 0 </span></div>
+                <div class="panou" id="player"> <span id="result-user"></span></div>
+                <div class="panou" id="comp">Computer</div>
+            </div>
+            <div class="round"></div>
+            <div class="choise">Make your choice</div>
+        <div>
+            <button class = "rock">
+                <img src="./img/rock.png" alt="rock"  >
+            </button>
+            <button class = "paper">
+                <img src="./img/paper.png" alt="paper" >
+            </button>
+            <button class = "scissors">
+                <img src="./img/scissors.png" alt="scissors">
+            </button>
+        </div>
+    </div>
+    <div class="modalPlayer">
+        <div class="resultPlayer"></div>
+        <div class="buttons">
+            <button  class="yes"><strong>PLAY AGAIN</strong> </button>
+            <a href="./index.html"><button  class="no"><strong>BACK TO MENU</strong></button></a>    
+        </div>
+    </div>
+    <div class="modalComputer">
+        <div class="resultComputer"></div>
+        <div class="buttons">
+            <button  class="yes1"><strong>PLAY AGAIN</strong> </button>
+            <a href="./index.html"><button  class="no"><strong>BACK TO MENU</strong></button></a>    
+        </div>
+    </div>
+    <audio class="win"><source src="./songs/winMusic.mp3"></audio>
+    <audio class="lose"><source src="./songs/loseMusic.mp3"></audio>
+    <div class="musicOn">
+        <audio id="audio" src="./songs/play.mp3" autoplay loop>
+    </div>
+</body>
+</html>
